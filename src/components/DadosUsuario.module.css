@@ -1,0 +1,195 @@
+.DadosUsuario {
+    left: 304px;
+    top: 104px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+}
+
+.DadosUsuarioTitle {
+    color: #878787;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+.DadosUsuarioContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.LabelForm {
+    color: #299D91;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.LabelFormEndereco {
+    color: #191919;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.FundoForm {
+    width: 80%;
+    padding: 24px;
+    background: white;
+    box-shadow: 0px 20px 25px rgba(76.01, 103.06, 100.26, 0.10);
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: inline-flex;
+}
+
+.Valor {
+    color: #191919;
+    font-size: 20px;
+    font-family: Inter;
+    text-transform: capitalize;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.Button {
+    width: 45%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #299D91;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.ButtonInativo {
+    width: 45%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #676767;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.ButtonBuscar {
+    width: 15%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #299D91;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.ButtonBuscar:hover {
+    cursor: pointer;
+}
+
+.Button:hover {
+    cursor: pointer;
+}
+
+.Detalhes {
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.ButtonEdit {
+    width: 38%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #299D91;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.ButtonEditInativo {
+    width: 38%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #676767;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.ButtonDel {
+    width: 44%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #299D91;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.ButtonDelInativo {
+    width: 44%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #676767;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.ButtonEdit:hover {
+    cursor: pointer;
+}
+
+.ButtonDel:hover {
+    cursor: pointer;
+}

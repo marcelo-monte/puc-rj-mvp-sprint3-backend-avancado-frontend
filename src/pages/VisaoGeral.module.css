@@ -1,0 +1,10 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.VisaoGeral {
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    background: #F4F5F7;
+}

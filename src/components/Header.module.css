@@ -1,0 +1,78 @@
+.header {
+    width: 1112px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 16px;
+    left: 280px;
+    top: 0px;
+    position: absolute;
+    border-bottom: 1px #e8e8e8 solid;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}
+
+.headerContent {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    display: flex;
+}
+
+.hello {
+    width: 140px;
+    color: #191919;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.dataContainer {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+}
+
+.data {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.procurarContainer {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    display: flex;
+}
+
+.procurarBox {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 24px;
+    background: white;
+    box-shadow: 0px 26px 26px rgba(106, 22, 58, 0.04);
+    border-radius: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 170px;
+    display: flex;
+}
+
+.procurarText {
+    width: 102px;
+    color: #9f9f9f;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}

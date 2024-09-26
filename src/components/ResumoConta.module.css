@@ -1,0 +1,83 @@
+.ChartsBar {
+    align-self: stretch;
+    background: #F5F5F5;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.Integration {
+    flex: 1 1 0;
+    padding: 20px 16px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.Frame199 {
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 321px;
+    display: inline-flex;
+}
+
+.Frame197 {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    display: flex;
+}
+
+.IconBg {
+    width: 44px;
+    height: 44px;
+    position: relative;
+    background: #F4F4F4;
+    border-radius: 8px;
+}
+
+.Frame196 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.Pages {
+    height: 10px;
+    color: #828282;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20.40px;
+    word-wrap: break-word;
+}
+
+.SaldoValue {
+    color: #0437F2;
+    font-size: 24px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.ReceitasValue {
+    color: #299D91;
+    font-size: 24px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.DespesasValue {
+    color: #FF2400;
+    font-size: 24px;
+    font-weight: 500;
+    word-wrap: break-word;
+}

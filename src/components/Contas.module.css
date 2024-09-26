@@ -1,0 +1,271 @@
+.Contas {
+    left: 304px;
+    top: 104px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+}
+
+.ContasTitle {
+    color: #878787;
+    font-size: 22px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+.ContaContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.Conta {
+    padding: 24px;
+    background: white;
+    box-shadow: 0px 20px 25px rgba(76.01, 103.06, 100.26, 0.10);
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: inline-flex;
+}
+
+.Header {
+    width: 304px;
+    height: 44px;
+    padding-bottom: 12px;
+    border-bottom: 1px rgba(210, 210, 210, 0.25) solid;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Tipo {
+    color: #878787;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.Type {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+}
+
+.Frame40714 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+}
+
+.NomeBanco {
+    text-align: right;
+    color: #666666;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 16px;
+    word-wrap: break-word;
+}
+
+.Content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+}
+
+.Detalhes {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+}
+
+.NMero {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    display: flex;
+}
+
+.NumeroConta,
+.Valor {
+    width: 304px;
+    color: #191919;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 28px;
+    word-wrap: break-word;
+}
+
+.Label {
+    width: 128px;
+    color: #9F9F9F;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.Saldo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    display: flex;
+}
+
+.Footer {
+    width: 304px;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Remover {
+    color: #066163;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.Detalhes {
+    color: white;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.Button {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #299D91;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+.Button:hover {
+    cursor: pointer;
+}
+
+.ChevronRight {
+    width: 16px;
+    height: 16px;
+    position: relative;
+}
+
+.Vector {
+    width: 4px;
+    height: 8px;
+    left: 6px;
+    top: 4px;
+    position: absolute;
+    border: 1.50px white solid;
+}
+
+.AddAccount {
+    width: 304px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: white;
+    box-shadow: 0px 20px 25px rgba(76.01, 103.06, 100.26, 0.10);
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+}
+
+.Button2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    display: flex;
+}
+
+.ButtonBig {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #299D91;
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    display: inline-flex;
+}
+
+.AddAccounts {
+    width: 144px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.Frame133537 {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    display: inline-flex;
+}
+
+.EditAccounts {
+    width: 160px;
+    text-align: center;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+}

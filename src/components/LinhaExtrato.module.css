@@ -1,0 +1,59 @@
+.ColunaData {
+    width: 22%;
+    color: #666666;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.ColunaCategoria,
+.ColunaDescricao,
+.ColunaEstabelecimento {
+    width: 22%;
+    color: #666666;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.ColunaDespesa {
+    text-align: right;
+    color: #FF2400;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.ColunaReceita {
+    text-align: right;
+    color: #299D91;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.TransactionItem {
+    width: 1048px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px rgba(210, 210, 210, 0.25) solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+    display: inline-flex;
+}

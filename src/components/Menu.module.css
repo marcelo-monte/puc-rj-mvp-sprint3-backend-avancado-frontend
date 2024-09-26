@@ -1,0 +1,190 @@
+.NavBar {
+    padding: 48px 28px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #191919;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 228px;
+    display: inline-flex;
+}
+
+.LogoMenu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: flex;
+}
+
+.Montebank {
+    width: 224px;
+    text-align: center;
+}
+
+.Monte {
+    color: white;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 1.92px;
+    word-wrap: break-word;
+}
+
+.Bank {
+    color: white;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 1.92px;
+    word-wrap: break-word;
+}
+
+.Menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+}
+
+.MenuItemNormal {
+    padding: 12px 16px;
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+    width: 156px;
+    height: 24px;
+    color: #878787;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.MenuItemNormal:hover {
+    background-color: #484848;
+}
+
+.MenuItemVerde {
+    padding: 12px 16px;
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+    width: 156px;
+    height: 24px;
+    color: #FFFFFF;
+    background: #299D91;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.Footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    display: flex;
+}
+
+.LogoutButton {
+    padding: 12px 16px;
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.LogoutText {
+    width: 124px;
+    height: 24px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.Profile {
+    padding: 12px 16px;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.Profile:hover {
+    cursor: pointer;
+}
+
+.NamePicture {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.Image {
+    width: 32px;
+    height: 32px;
+    border-radius: 48px;
+}
+
+.Name {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    display: flex;
+}
+
+.FulanoDaSilva {
+    width: 124px;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.VerProfile {
+    width: 76px;
+    color: #A5A5A5;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.Icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+}
+
+.Ellipse {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #4F4F4F;
+}

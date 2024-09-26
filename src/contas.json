@@ -1,0 +1,279 @@
+{
+    "contas": [
+        {
+            "id": 1,
+            "tipo": "Conta Corrente",
+            "banco": "Banco AB",
+            "numero": "123.456.789-0",
+            "saldo": 5008.55,
+            "transacoes": [
+                {
+                    "transacao": {
+                        "id": 1,
+                        "data": "01/07/2024 13:03:00",
+                        "categoria": "Alimentação",
+                        "descricao": "Sobremesa",
+                        "estabelecimento": "Gelateria Frost",
+                        "valor": -18
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 2,
+                        "data": "01/07/2024 19:15:00",
+                        "categoria": "Saúde",
+                        "descricao": "Remédios",
+                        "estabelecimento": "Drogaria Cura",
+                        "valor": -345.99
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 3,
+                        "data": "02/07/2024 07:10:00",
+                        "categoria": "Alimentação",
+                        "descricao": "Café da manhã",
+                        "estabelecimento": "Padaria Pãozinho",
+                        "valor": -22.39
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 4,
+                        "data": "05/07/2024 05:00:00",
+                        "categoria": "Salário",
+                        "descricao": "Salário",
+                        "estabelecimento": "Trabalho S.A.",
+                        "valor": 4258.27
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 5,
+                        "data": "05/07/2024 09:30:00",
+                        "categoria": "Habitação",
+                        "descricao": "Conta de Energia",
+                        "estabelecimento": "Energia S.A.",
+                        "valor": -192.2
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 6,
+                        "data": "06/07/2024 08:00:00",
+                        "categoria": "Transporte",
+                        "descricao": "Recarga Metrô",
+                        "estabelecimento": "Subway S.A.",
+                        "valor": -75
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 7,
+                        "data": "07/07/2024 10:42:00",
+                        "categoria": "Bens",
+                        "descricao": "Aluguel do Apto",
+                        "estabelecimento": "Inquilino",
+                        "valor": 1632
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 8,
+                        "data": "07/07/2024 18:00:00",
+                        "categoria": "Supermercado",
+                        "descricao": "Comida",
+                        "estabelecimento": "Mercado Ltda",
+                        "valor": -228.14
+                    }
+                }
+            ],
+            "resumo": {
+                "receitas": 5890.27,
+                "despesas": 881.72
+            }
+        },
+        {
+            "id": 2,
+            "tipo": "Conta Corrente",
+            "banco": "Banco Eco",
+            "numero": "789.456.123-2",
+            "saldo": 2308.38,
+            "transacoes": [
+                {
+                    "transacao": {
+                        "id": 9,
+                        "data": "02/07/2024 18:10:00",
+                        "categoria": "Saúde",
+                        "descricao": "Academia",
+                        "estabelecimento": "MalharFit S.A.",
+                        "valor": -100.99
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 10,
+                        "data": "03/07/2024 20:15:00",
+                        "categoria": "Lazer",
+                        "descricao": "Teatro",
+                        "estabelecimento": "Cultura Ltda",
+                        "valor": -85
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 11,
+                        "data": "04/07/2024 11:25:00",
+                        "categoria": "Empréstimo",
+                        "descricao": "Empréstimo",
+                        "estabelecimento": "Banco Eco",
+                        "valor": 3100
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 12,
+                        "data": "05/07/2024 12:09:00",
+                        "categoria": "Lazer",
+                        "descricao": "Streaming",
+                        "estabelecimento": "Filmes S.A.",
+                        "valor": -42.9
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 13,
+                        "data": "06/07/2024 14:15:00",
+                        "categoria": "Carro",
+                        "descricao": "Seguro",
+                        "estabelecimento": "Banco Eco",
+                        "valor": -250
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 14,
+                        "data": "07/07/2024 15:00:00",
+                        "categoria": "Carro",
+                        "descricao": "Multa",
+                        "estabelecimento": "Estado",
+                        "valor": -312.73
+                    }
+                }
+            ],
+            "resumo": {
+                "receitas": 3100,
+                "despesas": 791.62
+            }
+        },
+        {
+            "id": 3,
+            "tipo": "Conta Corrente",
+            "banco": "Banco XPTO",
+            "numero": "456.123.789-6",
+            "saldo": 12360,
+            "transacoes": [
+                {
+                    "transacao": {
+                        "id": 15,
+                        "data": "03/07/2024 07:40:00",
+                        "categoria": "Loteria",
+                        "descricao": "Prêmio",
+                        "estabelecimento": "Sorte S.A.",
+                        "valor": 48660
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 16,
+                        "data": "03/07/2024 10:36:00",
+                        "categoria": "Aplicação",
+                        "descricao": "Poupança",
+                        "estabelecimento": "Banco XPTO",
+                        "valor": -4300
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 17,
+                        "data": "05/07/2024 15:54:00",
+                        "categoria": "Aplicação",
+                        "descricao": "Poupança",
+                        "estabelecimento": "Banco Silva",
+                        "valor": -32000
+                    }
+                }
+            ],
+            "resumo": {
+                "receitas": 48660,
+                "despesas": 36300
+            }
+        },
+        {
+            "id": 4,
+            "tipo": "Poupança",
+            "banco": "Banco XPTO",
+            "numero": "247.4567.12-82",
+            "saldo": 4310.03,
+            "transacoes": [
+                {
+                    "transacao": {
+                        "id": 18,
+                        "data": "01/07/2024 05:00:00",
+                        "categoria": "Rendimentos",
+                        "descricao": "Juros Mensais",
+                        "estabelecimento": "Banco XPTO",
+                        "valor": 10.03
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 19,
+                        "data": "03/07/2024 10:36:00",
+                        "categoria": "Aplicação",
+                        "descricao": "Poupança",
+                        "estabelecimento": "Banco XPTO",
+                        "valor": 4300
+                    }
+                }
+            ],
+            "resumo": {
+                "receitas": 4310.03,
+                "despesas": 0
+            }
+        },
+        {
+            "id": 5,
+            "tipo": "Poupança",
+            "banco": "Banco Silva",
+            "numero": "719.9063.19-36",
+            "saldo": 32214.96,
+            "transacoes": [
+                {
+                    "transacao": {
+                        "id": 20,
+                        "data": "01/07/2024 05:00:00",
+                        "categoria": "Rendimentos",
+                        "descricao": "Juros Mensais",
+                        "estabelecimento": "Banco Silva",
+                        "valor": 214.96
+                    }
+                },
+                {
+                    "transacao": {
+                        "id": 21,
+                        "data": "05/07/2024 15:54:00",
+                        "categoria": "Aplicação",
+                        "descricao": "Poupança",
+                        "estabelecimento": "Banco XPTO",
+                        "valor": 32000
+                    }
+                }
+            ],
+            "resumo": {
+                "receitas": 32214.96,
+                "despesas": 0
+            }
+        }
+    ]
+}
