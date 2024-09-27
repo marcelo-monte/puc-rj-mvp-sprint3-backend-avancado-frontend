@@ -9,8 +9,8 @@ export function DadosUsuario() {
     const [classEdtBtn, setClassEdtBtn] = useState([]);
     const [classDelBtn, setClassDelBtn] = useState([]);
 
-    // TODO Enviar POST, PUT, DELETE, ajustar botão add/edit e remove
-
+    // Rota GET para recuperar dados do usuário e seu endereço
+    // da base de dados.
     useEffect(() => {
         let url = 'http://localhost:5000/usuario';
         fetch(url, {
@@ -30,12 +30,14 @@ export function DadosUsuario() {
             });
     }, []);
 
+    // Habilita o botão Adicionar, desabilita os demais
     const ativaBtnAdicao = () => {
         setClassAddBtn(styles.Button);
         setClassEdtBtn(styles.ButtonEditInativo);
         setClassDelBtn(styles.ButtonDelInativo);
     };
 
+    // Desabilita o botão Adicionar, habilita os demais
     const desativaBtnAdicao = () => {
         setClassAddBtn(styles.ButtonInativo);
         setClassEdtBtn(styles.ButtonEdit);
@@ -44,6 +46,7 @@ export function DadosUsuario() {
 
     const isNumeric = (string) => string == Number.parseFloat(string)
 
+    // Acessa a API externa ViaCEP
     const buscaCEP = () => {
         let cep = document.getElementById("cep").value;
 
@@ -70,6 +73,7 @@ export function DadosUsuario() {
         }
     };
 
+    // Monta os dados de form para posterior envio pelo fetch
     const montaFormData = () => {
         let formData = new URLSearchParams();
 
@@ -84,19 +88,48 @@ export function DadosUsuario() {
         return formData;
     };
 
+    // Atualiza os dados dos campos disabled do form HTML e seus pares no state
+    // do componente após adicionar ou editar um endereço.
     const loadFormData = (data) => {
-        alert(document.getElementById("bairro").value);
-        alert(data.bairro);
+
         document.getElementById("logradouro").value = data.logradouro;
         document.getElementById("bairro").value = data.bairro;
         document.getElementById("cidade").value = data.cidade;
         document.getElementById("uf").value = data.uf;
+        usuario.logradouro = data.logradouro;
+        usuario.bairro = data.bairro;
+        usuario.cidade = data.cidade;
+        usuario.uf = data.uf;
     };
 
-    const enviaFormAdd = () => {
+    // Apaga os dados dos campos do form HTML e seus pares no state
+    // do componente após remover um endereço.
+    const limpaFormData = () => {
+
+        document.getElementById("cep").value = "";
+        document.getElementById("logradouro").value = "";
+        document.getElementById("bairro").value = "";
+        document.getElementById("cidade").value = "";
+        document.getElementById("uf").value = "";
+        document.getElementById("complemento").value = "";
+        usuario.cep = "";
+        usuario.logradouro = "";
+        usuario.bairro = "";
+        usuario.cidade = "";
+        usuario.uf = "";
+        usuario.complemento = "";
+    };
+
+    // Rota POST para adicionar o endereço na base de dados e
+    // a rota PUT para editar o endereço na base de dados.
+    const enviaForm = (metodo) => {
         let cep = document.getElementById("cep").value;
 
-        if (classAddBtn == styles.Button) {
+        // Executa somente se:
+        // o botão de Adicionar estiver ativo e o método for POST;
+        // ou se
+        // o botão de Editar estiver ativo e o método for 'PUT'.
+        if ((classAddBtn == styles.Button && metodo == 'POST') || (classEdtBtn == styles.ButtonEdit && metodo == 'PUT')) {
 
             if (!isNumeric(cep)) {
                 alert("Informe apenas números!");
@@ -105,9 +138,9 @@ export function DadosUsuario() {
             } else {
                 let formData = montaFormData();
                 let url = "http://127.0.0.1:5000/endereco";
-                console.log(formData);
+
                 fetch(url, {
-                    method: 'POST',
+                    method: metodo,
                     body: formData
                 })
                     .then((response) => response.json())
@@ -115,17 +148,42 @@ export function DadosUsuario() {
 
                         if (data.cep != "") {
                             loadFormData(data);
-                            document.getElementById("mensagem").innerHTML = "Endereço inserido!";
-                        }
 
-                        setClassAddBtn(styles.ButtonInativo);
-                        setClassEdtBtn(styles.ButtonEdit);
-                        setClassDelBtn(styles.ButtonDel);
+                            if (metodo == 'POST') {
+                                document.getElementById("mensagem").innerHTML = "Endereço inserido!";
+                                desativaBtnAdicao();
+                            } else {
+                                document.getElementById("mensagem").innerHTML = "Endereço atualizado!";
+                            }
+                        }
                     })
                     .catch((error) => {
                         console.error('Erro: ', error);
                     });
             }
+        }
+    };
+
+    // Rota DELETE para remover o endereço da base de dados.
+    const enviaFormDel = () => {
+
+        // o botão de Remover estiver ativo
+        if (classDelBtn == styles.ButtonDel && confirm("Remover o endereço?")) {
+            let url = `http://127.0.0.1:5000/endereco?id=${usuario.id}`;
+
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    limpaFormData();
+                    document.getElementById("mensagem").innerHTML = "Endereço removido!";
+                    ativaBtnAdicao();
+                })
+                .catch((error) => {
+                    console.error('Erro: ', error);
+                });
         }
     };
 
@@ -200,12 +258,12 @@ export function DadosUsuario() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <div className={classAddBtn} onClick={() => enviaFormAdd()}>
+                                        <div className={classAddBtn} onClick={() => enviaForm('POST')}>
                                             <div className={styles.Detalhes}>Adicionar Endereço</div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div className={classEdtBtn} onClick={() => enviaFormEdt()}>
+                                        <div className={classEdtBtn} onClick={() => enviaForm('PUT')}>
                                             <div className={styles.Detalhes}>Editar Endereço</div>
                                         </div>
                                     </td>
