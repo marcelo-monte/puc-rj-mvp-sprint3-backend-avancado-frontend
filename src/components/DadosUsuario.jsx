@@ -44,7 +44,7 @@ export function DadosUsuario() {
         setClassDelBtn(styles.ButtonDel);
     };
 
-    const isNumeric = (string) => string == Number.parseFloat(string)
+    const isNumeric = (string) => string == Number.parseFloat(string);
 
     // Acessa a API externa ViaCEP
     const buscaCEP = () => {
